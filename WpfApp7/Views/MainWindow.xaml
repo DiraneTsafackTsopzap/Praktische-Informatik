@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="690" Width="990">
+    <Grid Background="AliceBlue"  x:Name="gridpanel" HorizontalAlignment="Center" Width="990" RenderTransformOrigin="0.5,0.5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="631*"/>
+        </Grid.RowDefinitions>
+        <Button Name="BackButton" FontSize="12" Content="Back"  HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Height="20" Width="50" Click="NavigateBack"/>
+
+        <Button FontSize="20" Content="Meine Projekte"  HorizontalAlignment="Center" Margin="0,31,40,0" VerticalAlignment="Center" Height="50" Width="150" Click="OeffneMeineProjekte" Grid.RowSpan="2"/>
+
+        <Frame x:Name="frameContent" NavigationUIVisibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,89,0,0" Height="500" Width="900" Grid.Row="1">
+        </Frame>
+    </Grid>
+</Window>
